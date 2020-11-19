@@ -14,14 +14,14 @@ frelres = norm(x-xex)/norm(xex);//erreur avant
 
 brelres = norm(B-A*x)/norm(B);//erreur arrier
 
-cata = cond(A);
+cot = cond(A);
 
 disp("Erreur avant=", frelres)
 
 disp("Erreur arriere=",brelres)
 
-disp("Conditionnement=", cata)
+disp("Conditionnement=", cot)
 
-disp("born", cata * brelres)
+disp("born", cot * brelres)
 
 endfunction
