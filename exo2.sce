@@ -10,16 +10,18 @@ B=A*xex;
 
 x=A\B;
 
-frelres = norm(x-xex)/norm(xex);
+frelres = norm(x-xex)/norm(xex);//erreur avant
 
-brelres = norm(B-A*x)/norm(B);
+brelres = norm(B-A*x)/norm(B);//erreur arrier
 
 cata = cond(A);
 
-disp("frelres=", cata)
+disp("Erreur avant=", frelres)
 
-disp("=", cata * frelres)
+disp("Erreur arriere=",brelres)
 
-disp("=", cata * brelres)
+disp("Conditionnement=", cata)
+
+disp("born", cata * brelres)
 
 endfunction
